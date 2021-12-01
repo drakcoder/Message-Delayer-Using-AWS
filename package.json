@@ -1,16 +1,16 @@
 {
-  "name": "message-delayer",
+  "name": "messageDelayerWithSNS",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1014.0",
-    "dotenv": "^10.0.0",
-    "twilio": "^3.70.0"
+    "aws-sdk": "^2.1022.0",
+    "twilio": "^3.71.1"
   }
 }

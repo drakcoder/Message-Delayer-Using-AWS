@@ -7,10 +7,10 @@ exports.handler=async (event,context)=>{
     const reqRecord=event.Records[0];
     console.log(reqRecord.MessageAttributes);
     if(reqRecord.MessageAttributes.MessageType.StringValue=='initial'){
-        const client=new twilio('AC2a75e14a168e47ffdc233351371179dd','1f6f65b6dbcaac6c128d879dcca3795a')
+        const client=new twilio('AUTH_TOKEN','AUTH_SECRET')
         await client.messages.create({
             to:'+919515172100',
-            messagingServiceSid:'MG91e24ca8c5bcfe0a10b7876a817a464f',
+            messagingServiceSid:'MSG_SERVICE_ID',
             body:reqRecord.body
         }).then(message=>{
             console.log('[M] ',message.sid);
